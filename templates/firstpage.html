@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/custom css/firstpage.css">
+</head>
+
+<body>
+    <div class="shadow-lg p-3 mb-5 bg-body rounded">
+        <img src="/static/media/mindfire_logo.jpeg" alt="Mindfire Solutions" width="20%" class="img-fluid"
+            height="auto">
+    </div>
+
+    <div class="container text-center">
+        <h1>Igniting</h1>
+        <span class="animated_text"></span>
+    </div>
+
+    <p class="container text-center">Get Name,email,phone number from candidate's Resume. <br> Put all the Resumes in a single folder in your Google Drive.Then you need to only sign in through that Google account.<br>
+    <warning>Please do not keep any other documents or other types of file inside the Directory,else it may result unexpected output.</warning>
+    </p>
+
+    <div class="container text-center">
+        <img src="/static/media/Google_Drive-Logo.wine.png" alt="Google Drive" width="10%" height="auto">
+    </div>
+    <button class="btn btn-lg btn-primary"><a
+            href="http://127.0.0.1:8000/drive">Signin</a></button>
+</body>
+<script type="text/javascript" src="/static/custom js/typed.min.js"></script>
+<script>
+    var typing = new Typed(".animated_text", {
+        strings: ['Transformation...', 'Solution...', 'Innovation...'],
+        typeSpeed: 100,
+        backSpeed: 40,
+        loop: true
+    });
+</script>
+
+</html>

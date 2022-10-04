@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/custom css/rootfolder.css">
+</head>
+
+<body>
+    <div class="shadow-lg p-3 mb-5 bg-body rounded">
+        <img src="/static/media/mindfire_logo.jpeg" alt="Mindfire Solutions" width="20%" class="img-fluid"
+            height="auto">
+        <button class="btn btn-primary position-absolute top-0 end-0" id="signout-button" 
+        onclick="closetab()">
+            <a href="{% url 'signout' %}">Sign Out</a>
+        </button>
+    </div>
+    <div class="container text-center">
+        <img src="/static/media/Google_Drive-Logo.wine.png" alt="Google Drive" width="40%" height="auto">
+    </div>
+    <div class="container text-center">
+        <span>Choose the Folder from your Drive</span><br><br>
+        <select name="folder" id="folder" class="btn btn-secondary dropdown-toggle">
+            {% for id,name in all_folders %}
+            <option value="{{id}}">{{name}}</option>
+            {% endfor %}
+        </select>
+        <button onclick="pass_id_in_url()" class="btn btn-lg btn-primary">select</button>
+        <!-- <button class="btn btn-lg btn-primary"><a href="">select</a></button> -->
+    </div>
+</body>
+<script>
+    function pass_id_in_url() {
+        id = document.getElementById('folder').value;
+        window.open('http://127.0.0.1:8000/drive/' + id, "_self"); //to be changed
+    }
+
+    function closetab(){
+        window.close();
+        console.log("logged out");
+    }
+</script>
+
+</html>

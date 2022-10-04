@@ -1,0 +1,22 @@
+span{
+    font-size: 30px;
+}
+
+select{
+    height: 47px;
+    margin-right: 6px;
+}
+
+#signout-button{
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+}

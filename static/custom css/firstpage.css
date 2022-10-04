@@ -1,0 +1,34 @@
+.animated_text{
+    color: red;
+    font-size: 90px;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 100px;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: large;
+    color: white;
+}
+
+a:hover{
+    color: red;
+}
+
+p{
+    font-size: 20px;
+}
+
+warning{
+    color: red;
+}
+
+button{
+    position: absolute;
+    margin-left: 47%;
+}
