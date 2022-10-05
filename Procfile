@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn resume_parser_project.wsgi
