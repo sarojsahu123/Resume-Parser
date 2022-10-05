@@ -23,6 +23,7 @@ It can fetch name,gmail,phone,skills from your resume that you have stored in Go
   import glob
  
  these libraries are being used for this app,make sure everything is installed.
- -Run python3 manage.py runserver
- (for ubuntu)
+ 
+ -Run python3 manage.py runserver(for ubuntu)
+ 
  -Now this app will run on 8000 port of your localhost
